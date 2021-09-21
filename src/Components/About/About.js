@@ -41,9 +41,11 @@ const About = () => {
               skill set to meet my client's needs.
             </p>
             <br />
-            <button data-aos="fade-up" data-aos-duration="1600" className="btn">
-              See my projects
-            </button>
+            <Link to = '/work'>
+                <button data-aos="fade-up" data-aos-duration="1600" className="btn">
+                  See my projects
+                </button>
+            </Link>
           </div>
         </div>
 
