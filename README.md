@@ -5,7 +5,7 @@ Hi,
 - First page there is image for me, what do i do.
 
 
-- Second page About me, i show what i do,
+- Second page About me, i show what i do.
 - i am Frontend from Egypt. 
      I creating beautiful websites that are responsive
      to all devices. I am permanently learning new ways to
