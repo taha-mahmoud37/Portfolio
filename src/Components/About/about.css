@@ -1,0 +1,120 @@
+.btns, .about .about-content button {
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: 1px solid #6c63ff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btns:hover, .about .about-content button:hover {
+  background-color: transparent;
+  color: #6c63ff;
+}
+
+.about .about-content h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.about .about-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.about .about-content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #6e6e6e;
+}
+
+.about .about-content button {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.about .img-portofolio {
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .img-portofolio img {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .about {
+    margin: auto;
+  }
+  .about .about-content {
+    margin: auto !important;
+  }
+  .about .about-content p br {
+    display: none;
+  }
+  .about .img-portofolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .about {
+    margin: auto;
+  }
+  .about .about-content {
+    margin: auto !important;
+  }
+  .about .about-content p br {
+    display: none;
+  }
+  .about .img-portofolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 300px) {
+  .about {
+    margin: auto;
+  }
+  .about .about-content {
+    margin: auto !important;
+  }
+  .about .about-content p br {
+    display: none;
+  }
+  .about .img-portofolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=about.css.map */

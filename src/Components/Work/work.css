@@ -1,0 +1,37 @@
+.work .content-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.work .content-card .content .cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -120%;
+  background-color: rgba(83, 83, 83, 0.55);
+  transition: all 0.66s;
+  -webkit-transition: all 0.66s;
+  -moz-transition: all 0.66s;
+  -ms-transition: all 0.66s;
+  -o-transition: all 0.66s;
+}
+
+.work .content-card .content .cover h4 {
+  color: #fff;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.work .content-card .content .cover h4:hover {
+  color: #6c63ff;
+}
+
+.work .content-card:hover .cover {
+  top: 0%;
+}
+/*# sourceMappingURL=work.css.map */

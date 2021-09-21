@@ -1,0 +1,22 @@
+@import "../src/Styles/utils/Variables/color";
+@import "../src/Styles/utils/Variables/fonts";
+@import "../src/Styles/Reset/reset";
+
+html {
+  @extend .all;
+}
+
+* {
+  @extend .reset;
+}
+
+.App {
+  display: flex !important;
+}
+
+@media (max-width: 1200px) {
+  .App {
+    display: block !important;
+    flex: none !important;
+  }
+}

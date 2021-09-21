@@ -1,0 +1,116 @@
+@import "../../Styles/utils/Variables/color";
+@import "../../Styles/utils/Variables/fonts";
+@import "../../Styles/utils/Variables/_mixins";
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 8%;
+}
+
+nav {
+  width: 100%;
+  height: 100vh;
+  border-right: 1px solid rgb(218, 218, 218);
+  background-color: rgb(238, 238, 238);
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      position: relative;
+
+      span {
+        position: absolute;
+        left: 0.1em;
+        bottom: 2.5em;
+        text-decoration: none;
+        background-color: $body-color;
+        color: $main-color;
+        text-align: center;
+        font-weight: $fontW-small;
+        border-radius: 4px;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        opacity: 0;
+        @include trans(all, 0.5s);
+      }
+      .hover-after:hover span {
+        opacity: 1;
+      }
+
+      .hover-after:hover .icon {
+        color: $button-background !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-media {
+    width: 100%;
+    height: 70px !important;
+
+    .navbar {
+      display: none !important;
+    }
+
+    .nav-flex {
+      display: flex !important;
+      height: auto;
+      background-color: rgb(238, 238, 238);
+      z-index: 999999;
+
+      .navbar-toggler {
+        outline: none;
+        box-shadow: none;
+        border: 2px solid #ddd;
+      }
+
+      .navbar-brand {
+        background-color: $body-color2;
+        color: $main-color;
+        font-family: $primary-font;
+        font-weight: $fontW-mid;
+        font-size: $fontS-mid;
+        padding: 5px;
+        @include brdr(50%);
+        margin-left: 10px;
+      }
+
+      .collapse {
+        justify-content: end;
+
+        ul {
+          margin-right: 20px;
+          a {
+            text-decoration: none !important;
+            color: $body-color;
+            font-weight: $fontW-mid;
+            font-size: $fontS-small + 0.1rem;
+            @include trans(all, 0.5s);
+
+            &:hover {
+              color: $button-background;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+}

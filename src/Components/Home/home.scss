@@ -1,0 +1,97 @@
+@import "../../Styles/utils/Variables/color";
+@import "../../Styles/utils/Variables/fonts";
+@import "../../Styles/utils/Variables/_mixins";
+@import "../../Styles/Buttons/buttons";
+
+.header {
+  .img-fluid {
+    box-shadow: 0 0 5px;
+  }
+
+  .head-content {
+    p {
+      font-family: $seconadry-font;
+      font-weight: $fontW-large;
+      font-size: $fontS-mid + 0.2rem;
+      color: $body-color2;
+    }
+    h1 {
+      font-family: $primary-font;
+      font-weight: $fontW-large;
+      font-size: $fontS-large + 1rem;
+      color: $body-color;
+    }
+    h2 {
+      font-family: $seconadry-font;
+      font-weight: $fontW-large;
+      color: #646566;
+      .span_{
+          color: $button-background;
+      }
+    }
+    button {
+      @extend .btns;
+      @include trans(all, 0.11s);
+    }
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .header {
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+  .header {
+    .img-box {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
+    .head-content {
+      text-align: center;
+      margin-top: -8vw !important;
+    }
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .header {
+    .img-box {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 90%;
+        height: 90%;
+      }
+    }
+    .head-content {
+      text-align: center;
+      margin-top: -8vw !important;
+    }
+  }
+}
+
+@media (max-width: 576px) and (min-width: 300px) {
+  .header {
+    .img-box {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 90%;
+        height: 90%;
+      }
+    }
+    .head-content {
+      text-align: center;
+      margin-top: -8vw !important;
+    }
+  }
+}

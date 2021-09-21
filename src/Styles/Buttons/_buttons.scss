@@ -1,0 +1,19 @@
+@import '../utils/Variables/_color';
+@import '../utils/Variables/_fonts';
+
+.btns{
+    background-color: $button-background;
+    color: $main-color;
+    font-size: $fontS-small + .2rem;
+    outline: none;
+    padding: 1rem ;
+    border: 1px solid $button-background;
+    box-shadow: none;
+    
+
+    &:hover
+    {
+        background-color: transparent;
+        color: $button-background;
+    }
+}

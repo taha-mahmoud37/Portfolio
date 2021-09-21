@@ -1,0 +1,17 @@
+
+
+@mixin trans($property, $time) {
+    transition: $property $time;
+    -webkit-transition: $property $time;
+    -moz-transition: $property $time;
+    -ms-transition: $property $time;
+    -o-transition: $property $time;
+}
+
+@mixin brdr($props) {
+    border-radius: $props !important;
+    -webkit-border-radius: $props !important;
+    -moz-border-radius: $props !important;
+    -ms-border-radius: $props !important;
+    -o-border-radius: $props !important;
+}

@@ -1,0 +1,29 @@
+footer {
+  display: none;
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+footer p {
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
+  padding-left: 30px;
+}
+
+footer p span {
+  color: #6c63ff;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  footer p {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=footer.css.map */
