@@ -1,12 +1,12 @@
 import React from "react";
 import "./about.scss";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <section className="container about pt-4 ">
       <div className="row">
-        <div className="col-lg-6 col-md-12 pt-4">
+        <div className="col-lg-6 col-md-12 pt-3">
           <div className="about-content">
             <h1 data-aos="fade-right" data-aos-duration="1000" className="mb-3">
               Hi, I'm Taha Mahmoud
@@ -19,18 +19,16 @@ const About = () => {
             >
               Frontend developer based on Egypt
             </h2>
-            <br />
             <p
               data-aos="fade-right"
               data-aos-duration="2200"
               data-aos-delay="600"
-              className="mb-4"
+              className="mb-3"
             >
               I became a Frontend developer because I'm drawn to <br /> a
               dynamic career that combines my spark for learning and <br />{" "}
               helping others.
             </p>
-            <br />
             <p
               data-aos="fade-right"
               data-aos-duration="2200"
@@ -41,11 +39,79 @@ const About = () => {
               devices. I am permanently learning new ways to <br /> increase my
               skill set to meet my client's needs.
             </p>
-            <br />
-            <Link to = '/work'>
-                <button data-aos="fade-up" data-aos-duration="1600" className="btn">
-                  See my projects
-                </button>
+            <div className="row  img-size  row-cols-5 mb-2" data-aos="fade-up" data-aos-duration="1000" >
+              <div className="col col-xs-3 mb-2">
+                <img
+                  src={require("../../images/vscode.png").default}
+                  alt="vscode"
+                  className="size"
+                />
+              </div>
+              <div className="col col-xs-3 mb-2">
+                <img
+                  src={require("../../images/html.png").default}
+                  alt="vscode"
+                  className="size"
+                />
+              </div>
+              <div className="col col-xs-3 mb-2">
+                <img
+                  src={require("../../images/css.png").default}
+                  alt="vscode"
+                  className="size"
+                />
+              </div>
+              <div className="col col-xs-3 mb-2">
+                <img
+                  src={require("../../images/boot.png").default}
+                  alt="vscode"
+                  className="size"
+                />
+              </div>
+              <div className="col col-xs-3 mb-2">
+                <img
+                  src={require("../../images/js.jpg").default}
+                  alt="vscode"
+                  className="size"
+                />
+              </div>
+              <div className="col col-xs-3 mb-2">
+                <img
+                  src={require("../../images/angular.png").default}
+                  alt="vscode"
+                  className="size"
+                />
+              </div>
+              <div className="col col-xs-3 mb-2">
+                <img
+                  src={require("../../images/react-native.png").default}
+                  alt="vscode"
+                  className="size"
+                />
+              </div>
+              <div className="col col-xs-3 mb-2">
+                <img
+                  src={require("../../images/sass.png").default}
+                  alt="vscode"
+                  className="size"
+                />
+              </div>
+              <div className="col col-xs-3  mb-2">
+                <img
+                  src={require("../../images/webpack.png").default}
+                  alt="vscode"
+                  className="size"
+                />
+              </div>
+            </div>
+            <Link to="/work">
+              <button
+                data-aos="fade-up"
+                data-aos-duration="1600"
+                className="btn"
+              >
+                See my projects
+              </button>
             </Link>
           </div>
         </div>

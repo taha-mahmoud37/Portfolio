@@ -1,86 +1,68 @@
-@import '../../Styles/utils/Variables/color';
-@import '../../Styles/utils/Variables/fonts';
-@import '../../Styles/utils/Variables/mixins';
-@import '../../Styles/Buttons/buttons';
-
+@import "../../Styles/utils/Variables/color";
+@import "../../Styles/utils/Variables/fonts";
+@import "../../Styles/utils/Variables/mixins";
+@import "../../Styles/Buttons/buttons";
 
 .contact {
-
-
-    .contact-content {
-        h4 {
-            font-size: $fontS-mid + .5rem;
-            font-weight: $fontW-mid;
+  .contact-content {
+    h4 {
+      font-size: $fontS-mid + 0.5rem;
+      font-weight: $fontW-mid;
+    }
+    p {
+      font-size: $fontS-small + 0.2rem;
+      font-weight: $fontW-small;
+      color: $content-color;
+    }
+    .icons {
+      a {
+        .icon {
+          margin-right: 10px;
+          @include trans(all, 0.5s);
         }
-        p {
-            font-size: $fontS-small + .2rem;
-            font-weight: $fontW-small;
-            color: #6e6e6e;
+        text-decoration: none;
+        color: $body-color;
+
+        .twitter:hover {
+          color: #1da1f2;
         }
-        .icons
-        {
-            a 
-            {
-                .icon {
-                    margin-right: 10px;
-                    @include trans(all, .5s);
-                }
-                text-decoration: none;
-                color: $body-color;
-
-                .twitter:hover
-                {
-                    color: #1da1f2;
-
-                }
-                .linked:hover
-                {
-                    color: #0077b5;
-
-                }
-                .facebook:hover
-                {
-                    color: #4267b2;
-
-                }
-                .git:hover
-                {
-                    color: #333;
-
-                }
-
-                
-            }
-            
+        .linked:hover {
+          color: #0077b5;
         }
-
+        .facebook:hover {
+          color: #4267b2;
+        }
+        .git:hover {
+          color: #333;
+        }
+      }
     }
+  }
 
-    h3 {
-        font-family: $primary-font;
-        font-weight: $fontW-mid;
-    }
+  h3 {
+    font-family: $primary-font;
+    font-weight: $fontW-mid;
+  }
 
-    .form-control
-    {
-        box-shadow: none !important;
-        outline: none !important;
-        border: none;
-        border: 1px solid #ddd;
-        font-family: $seconadry-font;
-        color: #ddd;
-        font-weight: $fontW-small;
-    }
+  .form-control {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none;
+    border: 1px solid #ddd;
+    font-family: $seconadry-font;
+    color: #ddd;
+    font-weight: $fontW-small;
+  }
 
-    .form-control:focus {
-        border-color: #ddd;
-    }
+  .form-control:focus {
+    border-color: #ddd;
+  }
 
-    button {
-        @extend .btns;
-        @include trans(all, .5s);
-        text-align: center;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+  button {
+    @extend .btns;
+    @include trans(all, 0.5s);
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

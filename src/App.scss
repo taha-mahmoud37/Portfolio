@@ -1,9 +1,13 @@
 @import "../src/Styles/utils/Variables/color";
 @import "../src/Styles/utils/Variables/fonts";
 @import "../src/Styles/Reset/reset";
+$body-bg: #f9f7fe;
 
 html {
   @extend .all;
+}
+body {
+  background-color: $body-bg;
 }
 
 * {
@@ -13,6 +17,8 @@ html {
 .App {
   display: flex !important;
 }
+
+
 
 @media (max-width: 1200px) {
   .App {

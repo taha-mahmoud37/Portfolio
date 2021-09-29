@@ -3,7 +3,7 @@
 
 footer {
   display: none;
-  background-color: rgb(238, 238, 238);
+  background-color: $footer-bg;
   width: 100%;
   p {
     font-weight: $fontW-mid;

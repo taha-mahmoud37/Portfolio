@@ -20,11 +20,18 @@
       font-family: $seconadry-font;
       font-weight: $fontW-small;
       font-size: $fontS-small + 0.2rem;
-      color: #6e6e6e;
+      color: $content-color;
     }
     button {
       @extend .btns;
       @include trans(all, 0.1s);
+    }
+
+    .img-size {
+      
+      .size {
+        width: 50px;
+      }
     }
   }
 
