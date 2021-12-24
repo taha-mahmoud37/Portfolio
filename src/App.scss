@@ -5,6 +5,7 @@ $body-bg: #f9f7fe;
 
 html {
   @extend .all;
+  overflow-x: hidden !important;
 }
 body {
   background-color: $body-bg;
